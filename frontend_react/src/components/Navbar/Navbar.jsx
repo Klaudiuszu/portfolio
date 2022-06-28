@@ -9,6 +9,8 @@ import './Navbar.scss';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
 
   return (
     <nav className="app__navbar">
@@ -18,19 +20,36 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
-            <div />
             <a href={`#${item}`}>{item}</a>
+            <div />
           </li>
         ))}
       </ul>
+
+
+
+      {/* <Hamburger toggled={isOpen} toggle={setOpen}  onClick={() => setOpen(false)}>
+        {console.log(isOpen)}
+            <ul>
+              {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+      </Hamburger> */}
+
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (
-          <motion.div
-            whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: 'easeOut' }}
+          <motion.div          
+            //transition={{ duration:0.5, ease: 'easeInOut'}}
+            animate={{ x: [650, 0] }}
+            transition={{ duration: 0.85, ease: "circOut"}}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
