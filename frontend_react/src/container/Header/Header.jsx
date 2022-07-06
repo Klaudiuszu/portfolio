@@ -1,6 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { AppWrap } from '../../wrapper/AppWrap';
+
+import TextTransform from './TextTramsform';
+
 import { images } from '../../constants';
 import './Header.scss';
 
@@ -16,6 +20,7 @@ const scaleVariants = {
 };
 
 const Header = () => (
+
   <div className="app__header app__flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -30,10 +35,9 @@ const Header = () => (
             <h1 className="head-text">Klaudio</h1>
           </div>
         </div>
-
-        <div className="tag-cmp app__flex">
-          <p className="p-text">Full-Stack</p>
-          <p className="p-text">Developer</p>
+        <div className="tag-cmp">
+        <TextTransform 
+        />
         </div>
       </div>
     </motion.div>
@@ -44,13 +48,13 @@ const Header = () => (
       className="app__header-img"
     >
       <img src={images.profile} alt="profile_bg" />
-      <motion.img
+      {/* <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         src={images.circle}
         alt="profile_circle"
         className="overlay_circle"
-      />
+      /> */}
     </motion.div>
 
     <motion.div
@@ -58,7 +62,7 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
+      {[].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
@@ -67,4 +71,4 @@ const Header = () => (
   </div>
 );
 
-export default Header;
+export default AppWrap(Header, 'home');
