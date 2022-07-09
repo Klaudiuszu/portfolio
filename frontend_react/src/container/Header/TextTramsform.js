@@ -4,7 +4,7 @@ import { useTrail, animated as a } from "react-spring";
 
 import './Header.scss';
 
-const items = ["after work i make sketches", "Now i am Fullstack Developer", "before i start my journey with programming i'm study architecture", "and time to time graphic designer"];
+const items = ["• after work i make sketches", "• Now i am Fullstack Developer", "• before i start my journey with programming i have studied architecture", "• and Occasionally i am graphic designer"];
 const config = { mass: 5, tension: 3000, friction: 200 };
 
 function TextTramsform() {
@@ -13,7 +13,7 @@ function TextTramsform() {
     config,
     opacity: toggle ? 0 : 1,
     x: toggle ? 20 : 0,
-    height: toggle ? 0 : 60,
+    height: toggle ? 0 : 90,
     from: { opacity: 20, x: 0, height: 0 }
   });
 

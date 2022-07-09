@@ -4,6 +4,7 @@ import { AppWrap} from '../../wrapper/AppWrap';
 import { MotionWrap } from '../../wrapper/MotionWrap';
 import { client } from '../../client';
 import { images } from '../../constants';
+
 import './Footer.scss';
 
 
@@ -51,6 +52,15 @@ const Footer = () => {
           <img src={images.mobile} alt="phone" />
           <a href="tel:+48 507-802-746" className="p-text">+48 507-802-746</a>
         </div>
+        <div className="app__footer-card">
+          <img src={images.cvicon} alt="phone" />
+          <a href={images.cveng} className="p-text" download>ENG CV Downlaod</a>
+        </div>
+        <div className="app__footer-card">
+          <img src={images.cvicon} alt="phone" />
+          <a href={images.cvpl} className="p-text" download>PL CV Downlaod</a>
+        </div>
+        
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
@@ -79,6 +89,7 @@ const Footer = () => {
         </div>
       )}
     </>
+
 
   )
 }

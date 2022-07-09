@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
+      <h2 className="head-text">Some about<span> My hobbies</span> <br />and what<span> makes me smile</span></h2>
 
       <div className="app__profiles">
 
@@ -29,8 +29,8 @@ const About = () => {
 
           <motion.div
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween' }}
+            whileHover={{ scale: 1.3 }}
+            transition={{ duration: 0.2, type: 'ease' }}
             className="app__profile-item"
             key={about.title + index}
           >
