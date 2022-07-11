@@ -1624,6 +1624,11 @@
     "schema-utils" "^3.0.0"
     "source-map" "^0.7.3"
 
+"@react-leaflet/core@^2.0.0":
+  "integrity" "sha512-SQQ5DCQIaLzvslN6wCXs5OWqtlvk1Ubv2n5d7zTM8SDl9hM5Rr2wVy7/nOCIY958D75/ovhq6ZoSvT7GLCX6sg=="
+  "resolved" "https://registry.npmjs.org/@react-leaflet/core/-/core-2.0.0.tgz"
+  "version" "2.0.0"
+
 "@react-native-community/cli-clean@^8.0.0":
   "integrity" "sha512-VY/kwyH5xp6oXiB9bcwa+I9W5k6WR/nX3s85FuMW76hSlgG1UVAGL04uZPwYlSmMZuSOSuoXOaIjJ7wAvQMBpg=="
   "resolved" "https://registry.npmjs.org/@react-native-community/cli-clean/-/cli-clean-8.0.0.tgz"
@@ -7751,6 +7756,11 @@
   dependencies:
     "language-subtag-registry" "~0.3.2"
 
+"leaflet@^1.8.0":
+  "integrity" "sha512-gwhMjFCQiYs3x/Sf+d49f10ERXaEFCPr+nVTryhAW8DWbMGqJqt9G4XuIaHmFW08zYvhgdzqXGr8AlW8v8dQkA=="
+  "resolved" "https://registry.npmjs.org/leaflet/-/leaflet-1.8.0.tgz"
+  "version" "1.8.0"
+
 "leven@^3.1.0":
   "integrity" "sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A=="
   "resolved" "https://registry.npmjs.org/leven/-/leven-3.1.0.tgz"
@@ -10098,6 +10108,13 @@
     "react-reconciler" "^0.20.4"
     "scheduler" "^0.13.6"
 
+"react-leaflet@^4.0.1":
+  "integrity" "sha512-CpMQ99+52AklQofrGrVQHqHSyY41wqax1wT65XdyEkky/26V/j+Sv+fp0/wOaqPvdEMaSO/Ovj4dS7bGqtYpwQ=="
+  "resolved" "https://registry.npmjs.org/react-leaflet/-/react-leaflet-4.0.1.tgz"
+  "version" "4.0.1"
+  dependencies:
+    "@react-leaflet/core" "^2.0.0"
+
 "react-native-codegen@^0.69.1":
   "integrity" "sha512-TOZEqBarczcyYN3iZE3VpKkooOevaAzBq9n7lU0h9mQUvtRhLVyolc+a5K6cWI0e4v4K69I0MqzjPcPeFKo32Q=="
   "resolved" "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.69.1.tgz"
@@ -10151,13 +10168,6 @@
     "use-sync-external-store" "^1.0.0"
     "whatwg-fetch" "^3.0.0"
     "ws" "^6.1.4"
-
-"react-particles-js@^3.6.0":
-  "integrity" "sha512-gQzUKZgPpjdplhAtskLnn9frLyei6uGuWabNtBGWnr3eZpHXfXJO1F8sedPhO29xfpKixE3HEejwGQAld8K16Q=="
-  "resolved" "https://registry.npmjs.org/react-particles-js/-/react-particles-js-3.6.0.tgz"
-  "version" "3.6.0"
-  dependencies:
-    "lodash" "^4.17.11"
 
 "react-reconciler@^0.20.4":
   "integrity" "sha512-kxERc4H32zV2lXMg/iMiwQHOtyqf15qojvkcZ5Ja2CPkjVohHw9k70pdDBwrnQhLVetUJBSYyqU3yqrlVTOajA=="

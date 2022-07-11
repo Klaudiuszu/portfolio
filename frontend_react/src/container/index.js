@@ -5,3 +5,4 @@ export {default as Skills} from './Skills/Skills';
 export {default as Testimonial} from './Testimonial/Testimonial';
 export {default as Work} from './Work/Work';
 export {default as TextTramsform} from './Header/TextTramsform';
+export {default as MapInfo} from './MapInfo/MapInfo';
