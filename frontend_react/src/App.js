@@ -3,9 +3,12 @@ import { About, Footer, Header, Skills, Testimonial, Work, MapInfo, TextTramsfor
 import { Navbar } from './components';
 import './App.scss';
 
+import useScrollSnap from 'react-use-scroll-snap';
+
 const App = () => {
+  
   return (
-    <div className='app'>
+    <div className='app app-scroll-container'>
       <Navbar />
       <Header />
       <About />

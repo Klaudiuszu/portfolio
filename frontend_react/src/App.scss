@@ -1,6 +1,7 @@
 .app {
   background-color: var(--white-color);
   font-family: var(--font-base);
+  scroll-snap-type: y mandatory;
 }
 
 .app__whitebg {
@@ -9,6 +10,11 @@
 
 .app__primarybg {
   background-color: var(--primary-color);
+}
+
+
+.scroll-area {
+  scroll-snap-align: start;
 }
 
 .app__container {

@@ -10302,6 +10302,13 @@
   dependencies:
     "debounce" "^1.2.1"
 
+"react-use-scroll-snap@^0.0.4":
+  "integrity" "sha512-IVnGldU13ZM5NkiBNudXFVsyDuF8u99zjYhGsy+fsS75CvcD//apT0Qn1YTEUQ/QDB21K8NPM8psFpTIKeay2Q=="
+  "resolved" "https://registry.npmjs.org/react-use-scroll-snap/-/react-use-scroll-snap-0.0.4.tgz"
+  "version" "0.0.4"
+  dependencies:
+    "tweezer.js" "^1.5.0"
+
 "react-zdog@>=1.0":
   "integrity" "sha512-L6/8Zi+Nf+faNMsSZ31HLmLlu6jcbs/jqqFvme7CFnYjAeYfhJ4HyuHKd7Pu/zk9tegv6FaJj1v+hmUwUpKLQw=="
   "resolved" "https://registry.npmjs.org/react-zdog/-/react-zdog-1.0.11.tgz"
@@ -10314,7 +10321,7 @@
     "resize-observer-polyfill" "^1.5.1"
     "scheduler" "0.13.3"
 
-"react@*", "react@^16.0.0", "react@^16.8 || ^17 || ^18", "react@^16.8.0  || >=17.0.0 || >=18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.0.0", "react@>=16.8", "react@>=16.8 || ^17.0.0 || ^18.0.0":
+"react@*", "react@^16.0.0", "react@^16.8 || ^17 || ^18", "react@^16.8.0  || >=17.0.0 || >=18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.0.0", "react@>=16.8", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.1":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -11960,6 +11967,11 @@
   "integrity" "sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA=="
   "resolved" "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz"
   "version" "0.14.5"
+
+"tweezer.js@^1.5.0":
+  "integrity" "sha512-aSiJz7rGWNAQq7hjMK9ZYDuEawXupcCWgl3woQQSoDP2Oh8O4srWb/uO1PzzHIsrPEOqrjJ2sUb9FERfzuBabQ=="
+  "resolved" "https://registry.npmjs.org/tweezer.js/-/tweezer.js-1.5.0.tgz"
+  "version" "1.5.0"
 
 "type-check@^0.4.0", "type-check@~0.4.0":
   "integrity" "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew=="
