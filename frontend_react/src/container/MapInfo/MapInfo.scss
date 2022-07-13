@@ -2,3 +2,30 @@
   width: 100vh;
   height: 100vh;
 }
+
+.app__mapInfo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+
+  h2 {
+    color: var(--green-color);
+    padding: 0.5rem 0;
+    letter-spacing: 0.2rem;
+  }
+
+  p {
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+}

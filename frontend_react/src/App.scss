@@ -1,6 +1,13 @@
 .app {
   background-color: var(--white-color);
   font-family: var(--font-base);
+  scroll-snap-type: y proximity;
+  overflow: scroll;
+  scroll-padding-top: 150px;
+}
+
+.app-scrollSection {
+ scroll-snap-align: start; 
 }
 
 .app__whitebg {
