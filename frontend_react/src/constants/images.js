@@ -38,6 +38,11 @@ import cveng from '../assets/cveng.png';
 import cvpl from '../assets/cvpl.png';
 import cvicon from '../assets/cvicon.png';
 import atelier3 from '../assets/atelier3.jpg';
+import cite from '../assets/mapIcons/cite.png';
+import wroA01 from '../assets/mapIcons/01_wro.jpg';
+import wroA02 from '../assets/mapIcons/01_wro2.jpg';
+import wroA03 from '../assets/mapIcons/01_wro3.jpg';
+import wroA04 from '../assets/mapIcons/01_wro4.jpg';
 export default {
   email,
   mobile,
@@ -76,4 +81,9 @@ export default {
   cvpl,
   cvicon,
   atelier3,
+  cite,
+  wroA01,
+  wroA02,
+  wroA03,
+  wroA04,
 };
