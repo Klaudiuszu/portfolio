@@ -40,9 +40,35 @@ import cvicon from '../assets/cvicon.png';
 import atelier3 from '../assets/atelier3.jpg';
 import cite from '../assets/mapIcons/cite.png';
 import wroA01 from '../assets/mapIcons/01_wro.jpg';
-import wroA02 from '../assets/mapIcons/01_wro2.jpg';
-import wroA03 from '../assets/mapIcons/01_wro3.jpg';
-import wroA04 from '../assets/mapIcons/01_wro4.jpg';
+
+
+import belarus01 from '../assets/mapIcons/01_b01.jpg';
+import belarus02 from '../assets/mapIcons/01_b02.jpg';
+import belarus03 from '../assets/mapIcons/01_b03.jpg';
+import barcelona from '../assets/mapIcons/01_barcelona.jpg';
+import brac01 from '../assets/mapIcons/01_brac.jpg';
+import brac02 from '../assets/mapIcons/02_brac.jpg';
+import dayYoungArch from '../assets/mapIcons/01_day.jpg';
+import gdansk from '../assets/mapIcons/01_gdansk.jpg';
+import hobby from '../assets/mapIcons/01_hobby.jpg';
+import youLikeL from '../assets/mapIcons/ldz.jpg';
+import baczewski from '../assets/mapIcons/01_lwow.jpg';
+import bank01 from '../assets/mapIcons/01_lwow1.jpg';
+import polesie from '../assets/mapIcons/01_polesie.jpg';
+import poznan from '../assets/mapIcons/01_poznan.jpg';
+import rome from '../assets/mapIcons/01_rome.jpg';
+import split from '../assets/mapIcons/01_split.jpg';
+import wawsketch from '../assets/mapIcons/01_waw.jpg';
+import everywereSketch from '../assets/mapIcons/01_wroeverywhere.jpg';
+import zolkiew from '../assets/mapIcons/01_zulkiew.jpg';
+import krk from '../assets/mapIcons/-1_krk.jpg';
+import wroSenior from '../assets/mapIcons/02_wro.jpg';
+import wroSenior2 from '../assets/mapIcons/03_wro.jpg';
+import lublin from '../assets/mapIcons/01_lbl.jpg';
+import janowiec from '../assets/mapIcons/01_janowiec.jpg';
+import german from '../assets/mapIcons/german.jpg';
+
+
 export default {
   email,
   mobile,
@@ -83,7 +109,29 @@ export default {
   atelier3,
   cite,
   wroA01,
-  wroA02,
-  wroA03,
-  wroA04,
+  belarus01,
+  belarus02,
+  belarus03,
+  barcelona,
+  brac01,
+  brac02,
+  dayYoungArch,
+  gdansk,
+  hobby,
+  youLikeL,
+  baczewski,
+  bank01,
+  polesie,
+  poznan,
+  rome,
+  split,
+  wawsketch,
+  everywereSketch,
+  zolkiew,
+  krk,
+  wroSenior,
+  wroSenior2,
+  lublin,
+  janowiec,
+  german,
 };

@@ -8,6 +8,7 @@ import { MotionWrap } from '../../wrapper/MotionWrap';
 import { urlFor, client } from '../../client';
 import './Skills.scss';
 
+
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
