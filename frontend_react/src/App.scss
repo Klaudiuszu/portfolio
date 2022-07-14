@@ -1,8 +1,6 @@
 .app {
   background-color: var(--white-color);
   font-family: var(--font-base);
-  scroll-snap-type: y mandatory;
-}
 
 .app__whitebg {
   background-color: var(--white-color);
@@ -202,4 +200,4 @@
   .copyright {
     padding: 2rem;
   }
-}
+} }
