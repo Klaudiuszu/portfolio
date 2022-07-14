@@ -10,22 +10,34 @@ import { images } from "../../constants";
 
 import React from "react";
 
-function GetIcon(_iconSize, iconName) {
+function GetIcon(_iconSize, iconName, imagesName) {
   return L.icon({
     iconUrl: require("../../assets/mapIcons/" + iconName + ".png"),
     iconSize: [_iconSize],
   });
 }
 
+
 const MapInfo = () => {
   const locations = [
     {
-      name: "myCite",
+      name: "Home",
       description: "My acctualy top city to live with my love :)",
       position: [52.29, 21.06],
-      size: 80,
+      size: 40,
       iconName: "cite",
+      imageUrl: "../../assets/profile.png",
+
     },
+    {
+      name: "Speech in Wroclaw Univercity of Technology",
+      description: "Speech about architecutre from east Ukraine with Polish history. Some about polish-ukrainian social problem before WW2. In the room was ~80 person.",
+      position: [51.11, 17.08],
+      size: 50,
+      iconName: "wroclawSpeech",
+      imageUrl: "../../assets/mapIcons/01_wro.jpg",
+
+    }
   ];
 
   return (
@@ -41,7 +53,7 @@ const MapInfo = () => {
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            url="https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=ZlAX2267wcS358pcO51B"
           />
           {locations.map((location) => (
             <Marker
@@ -53,8 +65,8 @@ const MapInfo = () => {
                 className="app__mapInfo-container app__flex">
                   <img
                     src={images.profile}
-                    width="150"
-                    height="150"
+                    width="50"
+                    height="50"
                   />
                   <h2>
                   {location.name}
@@ -62,6 +74,12 @@ const MapInfo = () => {
                   <p>
                   {location.description}
                   </p>
+                  <img 
+                  src={location.imageUrl} 
+                  width="50"
+                  height="50"
+                  />
+
                 </div>
               </Popup>
             </Marker>
