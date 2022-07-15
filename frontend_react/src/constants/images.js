@@ -69,6 +69,7 @@ import janowiec from '../assets/mapIcons/01_janowiec.jpg';
 import german from '../assets/mapIcons/german.jpg';
 
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   email,
   mobile,
