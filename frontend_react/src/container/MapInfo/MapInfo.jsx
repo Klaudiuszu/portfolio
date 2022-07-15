@@ -148,7 +148,7 @@ const MapInfo = () => {
       position: [52.09612663424824, 23.769866725047955],
       size: 30,
       iconName: "sketch",
-      imageUrl: images.belarus03,
+      imageUrl: images.bank01,
     },
     {
       name: "Sketch",
@@ -164,7 +164,7 @@ const MapInfo = () => {
       position: [50.0625014525146, 19.976067758295706],
       size: 30,
       iconName: "sketch",
-      imageUrl: images.belarus03,
+      imageUrl: images.krk,
     },
     {
       name: "Sketch",
