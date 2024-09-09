@@ -4,7 +4,12 @@ import { useTrail, animated as a } from "react-spring";
 
 import './Header.scss';
 
-const items = ["• after work i make sketches", "• Now i am Fullstack Developer", "• before i start my journey with programming i have studied architecture", "• and Occasionally i am graphic designer"];
+const items = [
+  "• I am currently a React developer and UX/UI designer",
+  "• I sketch a lot",
+  "• I previously studied architecture",
+  "• I enjoy baking pizza"
+];
 const config = { mass: 5, tension: 3000, friction: 200 };
 
 function TextTramsform() {
@@ -19,7 +24,7 @@ function TextTramsform() {
 
   return (
     <div onClick={() => set(state => !state)}>
-    <h3 className="head-text">About me</h3>
+      <h3 className="head-text">About me</h3>
       <p className="p-info">
         {trail.map(({ x, height, ...rest }, index) => (
           <a.div
