@@ -1,15 +1,12 @@
-import { MapContainer, TileLayer, useMap, Popup, Marker } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 import L from "leaflet";
 import { AppWrap } from "../../wrapper/AppWrap";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import "./MapInfo.scss";
 import { images } from "../../constants";
-import { AnimateSharedLayout } from "framer-motion"
-
-import React, { useState } from "react";
+import "./MapInfo.scss";
 
 function GetIcon(_iconSize, iconName, imagesName) {
   return L.icon({
@@ -17,7 +14,6 @@ function GetIcon(_iconSize, iconName, imagesName) {
     iconSize: [_iconSize],
   });
 }
-
 
 const MapInfo = () => {
   const locations = [
@@ -31,17 +27,17 @@ const MapInfo = () => {
     },
     {
       name: "Speech in Wroclaw Univercity of Technology",
-      description: "Speech about architecutre from east Ukraine with Polish history. Some about polish-ukrainian social problem before WW2. In the room was ~80 person.",
+      description:
+        "Speech about architecutre from east Ukraine with Polish history. Some about polish-ukrainian social problem before WW2. In the room was ~80 person.",
       position: [51.386582818975995, 16.692584877544427],
       size: 20,
       iconName: "Speech",
       imageUrl: images.wroA01,
-
     },
     {
       name: "Speech in Poznań",
       description: "Speech about architecture in eastern borderlands.",
-      position: [52.40, 16.91],
+      position: [52.4, 16.91],
       size: 30,
       iconName: "Speech",
       imageUrl: images.poznan,
@@ -120,7 +116,8 @@ const MapInfo = () => {
     },
     {
       name: "Sketch",
-      description: "my one of the best city - Lviv. Sketch made in Baczewski restaurant",
+      description:
+        "my one of the best city - Lviv. Sketch made in Baczewski restaurant",
       position: [49.830874177927114, 24.01360592332347],
       size: 50,
       iconName: "sketch",
@@ -174,6 +171,14 @@ const MapInfo = () => {
       iconName: "sketch",
       imageUrl: images.german,
     },
+    {
+      name: "Sketch",
+      description: "Arctic Catedral in Tromso, Norway",
+      position: [69.6480572438085, 18.98768216000089],
+      size: 30,
+      iconName: "sketch",
+      imageUrl: images.tromso,
+    },
   ];
 
   return (
@@ -211,13 +216,17 @@ const MapInfo = () => {
                         x: 0,
                         y: 0,
                         scale: 1,
-                        
                       }}
-                      whileHover={{ scale: 3}}
-                    ><div>
-                      <a className="app__MapInfo-imgWrapper">
-                        <img src={location.imageUrl} width="150" height="150" />
-                      </a>
+                      whileHover={{ scale: 3 }}
+                    >
+                      <div>
+                        <a className="app__MapInfo-imgWrapper">
+                          <img
+                            src={location.imageUrl}
+                            width="150"
+                            height="150"
+                          />
+                        </a>
                       </div>
                     </motion.a>
                   </div>
