@@ -1,0 +1,56 @@
+name: CI - Build Frontend
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: frontend_react
+
+      - name: Build
+        run: npm run build --if-present
+        working-directory: frontend_react
+
+  set-pages-source:
+    needs: frontend
+    runs-on: ubuntu-latest
+    if: ${{ needs.frontend.result == 'success' }}
+    permissions:
+      pages: write
+      contents: read
+    steps:
+      - name: Set GitHub Pages source to gh-pages
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            await github.rest.repos.updatePagesSite({
+              owner,
+              repo,
+              source: {
+                branch: 'gh-pages',
+                path: '/'
+              }
+            });
+            core.info('Set Pages source to gh-pages');
