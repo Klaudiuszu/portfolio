@@ -31,18 +31,21 @@ jobs:
         run: npm run build
         working-directory: frontend_react
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: frontend_react/build
+      - name: Archive build
+        run: ls -la frontend_react/build
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      pages: write
-      id-token: write
+      contents: write
 
     steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Deploy to gh-pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: frontend_react/build
+          token: ${{ secrets.GITHUB_TOKEN }}
