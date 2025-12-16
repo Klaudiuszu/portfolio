@@ -46,7 +46,6 @@ import belarus01 from "../assets/mapIcons/01_b01.jpg";
 import belarus02 from "../assets/mapIcons/01_b02.jpg";
 import belarus03 from "../assets/mapIcons/01_b03.jpg";
 import barcelona from "../assets/mapIcons/01_barcelona.jpg";
-import brac01 from "../assets/mapIcons/01_brac.jpg";
 import dayYoungArch from "../assets/mapIcons/01_day.jpg";
 import gdansk from "../assets/mapIcons/01_gdansk.jpg";
 import hobby from "../assets/mapIcons/01_hobby.jpg";
@@ -61,7 +60,6 @@ import split from "../assets/mapIcons/01_split.jpg";
 import wawsketch from "../assets/mapIcons/01_waw.jpg";
 import everywereSketch from "../assets/mapIcons/01_wroeverywhere.jpg";
 import zolkiew from "../assets/mapIcons/01_zulkiew.jpg";
-import brac02 from "../assets/mapIcons/02_brac.jpg";
 import wroSenior from "../assets/mapIcons/02_wro.jpg";
 import wroSenior2 from "../assets/mapIcons/03_wro.jpg";
 import german from "../assets/mapIcons/german.jpg";
@@ -113,8 +111,6 @@ export default {
   belarus02,
   belarus03,
   barcelona,
-  brac01,
-  brac02,
   dayYoungArch,
   gdansk,
   hobby,

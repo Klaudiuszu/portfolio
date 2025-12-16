@@ -68,22 +68,6 @@ const MapInfo = () => {
     },
     {
       name: "Sketch",
-      description: "Sketch in old and beautyfull village in Croatia.",
-      position: [43.374752216024866, 16.604519025450525],
-      size: 10,
-      iconName: "sketch",
-      imageUrl: images.brac02,
-    },
-    {
-      name: "Sketch",
-      description: "Sketch city center in Lozisca.",
-      position: [43.34854459310235, 16.48326139355626],
-      size: 10,
-      iconName: "sketch",
-      imageUrl: images.brac01,
-    },
-    {
-      name: "Sketch",
       description: "My sketchbooks can travel alone :)",
       position: [41.48500423068813, 2.470840530642692],
       size: 40,
