@@ -22,7 +22,6 @@
     "react-simple-image-slider": "^2.4.1",
     "react-spring": "^9.4.5",
     "react-tooltip": "^4.2.21",
-    "react-use-scroll-snap": "^0.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
